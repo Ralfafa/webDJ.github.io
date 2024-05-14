@@ -1,0 +1,574 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('Foto DJ/condesaonur1.JPG'); /* Ruta correcta de la imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen en la página */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #fff; /* Cambia el color del texto a blanco */
+}
+
+h1, h2, h3, p { /* Aplica el color blanco a todos los encabezados y párrafos */
+    color: #fff;
+}
+
+a { /* Estilos para los enlaces */
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+}
+
+a:hover { /* Estilos para cuando el mouse pasa sobre los enlaces */
+    color: #ccc; /* Cambia el color a un gris claro para indicar interactividad */
+}
+
+
+header {
+    background: linear-gradient(45deg, #334d50, #cbcaa5);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 150px; /* Ajusta según el contenido */
+}
+
+.vinyl-icon {
+    position: absolute;
+    font-size: 50px; /* Tamaño del ícono */
+    color: rgba(255, 255, 255, 0.7);
+    animation: move 15s linear infinite;
+}
+
+/* Cada ícono puede tener su propia animación basada en una clase adicional o id */
+.vinyl-icon:nth-child(1) {
+    animation-duration: 12s; /* Tiempo de animación */
+}
+.vinyl-icon:nth-child(2) {
+    animation-duration: 14s;
+}
+.vinyl-icon:nth-child(3) {
+    animation-duration: 16s;
+}
+.vinyl-icon:nth-child(4) {
+    animation-duration: 18s;
+}
+
+.title-image-container {
+    text-align: center; /* Centra la imagen en el contenedor */
+}
+
+#rotating-title {
+    animation: rotate-slowly 30s linear infinite;
+    display: block;
+    margin: 0 auto;
+    max-width: 50px;
+    height: auto;
+    transform-origin: center; /* Asegura que la rotación sea alrededor del centro de la imagen */
+}
+
+
+
+@keyframes rotate-slowly {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@keyframes move {
+    0% { left: -100px; top: 0; transform: translateX(0); }
+    25% { left: 25%; top: 50px; transform: translateX(25vw); }
+    50% { left: 50%; top: 100px; transform: translateX(50vw); }
+    75% { left: 75%; top: 50px; transform: translateX(75vw); }
+    100% { left: 100%; top: 0; transform: translateX(100vw); }
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+main {
+    margin: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+section {
+    padding: 50px 20px; /* Añade padding para que cada sección sea clara */
+    border-bottom: 1px solid #ccc; /* Opcional: añade una línea entre secciones */
+}
+
+/* Estilo adicional para mejorar la navegación */
+html {
+    scroll-behavior: smooth; /* Asegura un desplazamiento suave entre secciones */
+}
+
+/* Estilo General de la Barra de Búsqueda */
+.search-bar {
+    position: absolute; /* Posicionamiento absoluto respecto a su contenedor relativo más cercano */
+    top: 10px; /* Espacio desde la parte superior de la página */
+    left: 10px; /* Espacio desde la parte izquierda de la página */
+    display: flex;
+    align-items: center; /* Centra verticalmente el ícono con el campo de texto */
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px;
+    background: white;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #333;
+    display: none; /* Inicialmente oculto */
+    width: 0; /* Inicialmente sin ancho */
+    transition: width 0.5s; /* Transición suave para el ancho */
+}
+
+.search-bar i {
+    color: #333;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Efectos para el ícono cuando se pasa el ratón por encima */
+.search-bar i:hover {
+    color: #0056b3;
+}
+
+/* Menú de Opciones */
+.nav-bar {
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo blanco con baja opacidad */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Sombra sutil para profundidad */
+    text-align: center;
+    padding: 10px 0; /* Ajuste del padding según necesidad */
+    position: sticky; /* Si prefieres que la barra de navegación se quede en la parte superior al desplazar */
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-bar li {
+    margin: 0 20px;
+}
+
+.nav-bar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.nav-bar a:hover {
+    background-color: #0056b3;
+    border-radius: 5px;
+}
+
+
+
+.menu-toggle {
+    display: block;
+}
+
+/* Oculta el menú en pantallas pequeñas */
+@media (max-width: 768px) {
+    .nav-bar ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+    }
+}
+
+.media {
+    width: 500px; /* Ajusta este valor según lo pequeñas que quieras las imágenes */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    display: inline-block; /* Permite que las imágenes estén una al lado de la otra */
+    margin-right: 10px; /* Añade un pequeño margen entre imágenes */
+    border-radius: 5px; /* Bordes redondeados para suavizar las esquinas */
+}
+
+.additional-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Espacio entre las imágenes */
+    justify-content: center; /* Centra horizontalmente el grupo de imágenes */
+    width: 550px; /* Establece el ancho que quieres para el grupo */
+    margin: 0 auto; /* Centra horizontalmente el contenedor en la página */
+}
+
+
+.additional-images img {
+    width: calc(33.333% - 20px); /* Ajusta esto para incluir el espacio del 'gap' */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    display: block; /* Mantiene las imágenes como bloques para evitar problemas de alineación */
+}
+
+.additional-images img.appear {
+    opacity: 1;
+}
+
+
+/* Estilos solo para las imágenes en la sección de información */
+.info-img {
+    width: 50%; /* Ajusta este valor según el tamaño deseado */
+    max-width: 200px; /* Tamaño máximo para mantener las imágenes pequeñas */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para darles un efecto flotante */
+    margin: 10px auto; /* Margen para espaciarlas verticalmente y centrar */
+    display: block; /* Centra la imagen en su contenedor padre */
+}
+
+.image-slider {
+    position: relative;
+    width: 500px; /* Ancho fijo para el carrusel */
+    height: 300px; /* Altura fija para el carrusel */
+    overflow: hidden;
+    margin: 0 auto; /* Centrar horizontalmente */
+    border-radius: 8px;
+    background-color: transparent; /* Fondo transparente */
+}
+
+.image-slider img.media {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Mostrar la imagen completa sin recortar */
+    opacity: 0; /* Ocultar todas las imágenes inicialmente */
+    transition: opacity 1s ease-in-out;
+}
+
+.image-slider img.media.active {
+    opacity: 1; /* Solo la imagen activa se muestra */
+}
+
+
+
+.text-background {
+    background-color: rgba(0, 0, 0, 0.8); /* Fondo negro con opacidad del 80% */
+    color: white; /* Texto en color blanco para mejorar la legibilidad */
+    padding: 15px; /* Espacio interior para separar el texto de los bordes */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 20px; /* Margen alrededor del párrafo para separarlo de otros elementos */
+}
+
+.section-background {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad del 70% */
+    padding: 20px; /* Espacio interior para separar el contenido del borde */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Margen inferior para separar las secciones */
+}
+
+
+
+#multimedia {
+    text-align: center; /* Asegura que todo dentro de #multimedia esté centrado */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente oscuro */
+    color: white; /* Texto en color blanco para mejorar contraste */
+    padding: 20px 0; /* Añade padding alrededor de la sección */
+    border-radius: 10px; /* Bordes redondeados para la sección */
+    width: 80%; /* Ancho del contenedor para centrarlo dentro de la página */
+    margin: 0 auto; /* Centra la sección en la página */
+}
+
+
+
+.video-container {
+    display: flex; /* Flexbox para el contenedor */
+    flex-wrap: wrap; /* Permite que el contenido se acomode en múltiples filas si es necesario */
+    gap: 20px; /* Espacio entre videos */
+    justify-content: center; /* Centra los elementos dentro del contenedor */
+}
+
+.video-container p {
+    display: none; /* Esto ocultará todas las descripciones inicialmente */
+}
+
+.video-container video {
+    width: 300px; /* Tamaño actual */
+    height: auto; /* Mantiene la proporción del video */
+    display: none; /* Inicialmente oculto */
+    border-radius: 10px; /* Bordes redondeados para un aspecto suave */
+}
+
+.video-container video.active-video {
+    display: block; /* Mostrar el video cuando esté activo */
+    width: 500px; /* Reducir el tamaño del video */
+    margin: 0 auto; /* Centrar el video si es necesario */
+}
+
+
+
+.video-selector {
+    flex: 1 1 30%; /* Cada video ocupa un 30% de ancho relativo, y se ajusta al tamaño disponible */
+    min-width: 200px; /* Ancho mínimo para evitar que se haga muy pequeño */
+    max-width: 300px; /* Ancho máximo para que no sea demasiado grande */
+    text-align: center; /* Centra el contenido dentro de cada video */
+    margin: 0 auto; /* Centra el contenedor en su sección */
+    margin-bottom: 20px; /* Espacio entre el selector y el contenido siguiente */
+}
+
+.video-selector button {
+    width: 100%; /* El botón debe ocupar todo el ancho del contenedor */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente oscuro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; /* Alinea la miniatura y el texto en columna */
+    align-items: center; /* Centra el contenido del botón */
+    transition: background-color 0.3s, transform 0.3s; /* Transición suave para hover */
+}
+
+.video-selector button img {
+    width: 100%; /* Miniatura ocupa todo el ancho del contenedor del botón */
+    border-radius: 5px; /* Bordes redondeados para la miniatura */
+    margin-bottom: 10px; /* Espacio entre la miniatura y el texto */
+}
+
+.video-selector button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo más claro y transparente al pasar el mouse */
+    transform: scale(1.05); /* Ligero aumento de tamaño al pasar el mouse */
+}
+
+.video-container video {
+    display: none; /* Oculta los videos inicialmente */
+    width: 100%; /* Asegura que el video ocupe todo el ancho del contenedor */
+    border-radius: 10px; /* Bordes redondeados para el video */
+}
+
+
+.media video {
+    width: 50%; /* Ajusta el porcentaje para que coincida con el de la imagen */
+    max-width: 300px; /* Establece el mismo tamaño máximo que para la imagen */
+    border-radius: 10px; /* Bordes redondeados para un aspecto suave */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra para dar profundidad */
+    margin: 10px auto; /* Centra el video horizontalmente */
+}
+
+
+#links {
+    text-align: center; /* Centrar los textos y contenido */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo ligeramente transparente */
+    margin: 20px auto; /* Centrado horizontal y espacio alrededor */
+    max-width: 800px; /* Máximo ancho del contenedor para no extenderse demasiado */
+}
+
+.youtube-link, .linktree-container {
+    margin-bottom: 20px; /* Espacio entre secciones */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1); /* Ligera transparencia para distinguir secciones */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+.youtube-link a, .linktree-container a {
+    display: block; /* Asegura que los enlaces tomen todo el espacio de su contenedor */
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado */
+    padding: 10px;
+    transition: background-color 0.3s; /* Efecto suave al cambiar el fondo */
+}
+
+.youtube-link a:hover, .linktree-container a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cambio de color al pasar el ratón */
+}
+
+.youtube-link img {
+    width: 100%; /* Asegura que la imagen use todo el ancho disponible */
+    max-width: 300px; /* Máximo ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+#calendar {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.calendar-container {
+    padding: 15px;
+    background-color: #333; /* Fondo oscuro para el contenedor */
+    border-radius: 10px; /* Bordes redondeados para estética */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra para profundidad */
+    text-align: center; /* Centra el contenido del contenedor */
+    margin: 20px auto; /* Centrado automático y espacio alrededor */
+}
+
+
+.calendar-container iframe {
+    width: 700px; /* Reduce el ancho para que sea un poco más pequeño */
+    height: 500px; /* Reduce la altura acorde al ancho */
+    border: none; /* Elimina el borde del iframe */
+    filter: brightness(50%); /* Oscurece el color del calendario */
+}
+
+
+.request-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.request-form input, .request-form textarea {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.request-form button {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.request-form button:hover {
+    background-color: #007bff;
+}
+
+
+#contacto {
+    text-align: center; /* Centra el texto y los enlaces */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    color: white; /* Texto en color blanco */
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 20px auto; /* Margen automático para centrar la sección */
+    width: 80%; /* Ancho del contenedor de contacto */
+}
+
+#contactos p {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con 50% de opacidad */
+    padding: 10px; /* Espacio interno para mejorar la visibilidad */
+    border-radius: 5px; /* Bordes redondeados para un diseño más agradable */
+}
+
+#contacto a {
+    display: inline-block;
+    margin: 10px 0; /* Espacio vertical entre los enlaces */
+    padding: 10px 20px;
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Texto en color blanco */
+    border-radius: 5px; /* Bordes redondeados para los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    transition: background-color 0.3s; /* Transición para hover */
+}
+
+#contacto a:hover {
+    background-color: #0056b3; /* Cambia el color de fondo al pasar el ratón */
+}
+
+.fa-instagram {
+    color: white; /* Cambia el color según tu diseño */
+    font-size: 24px; /* Ajusta el tamaño según necesites */
+}
+
+footer {
+    background: linear-gradient(45deg, #2b5876, #4e4376);
+    color: white;
+    padding: 3px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 150px; /* Ajusta según el contenido */
+}
+
+.vinyl-footer-icon {
+    position: absolute;
+    font-size: 40px; /* Tamaño del ícono */
+    color: rgba(255, 255, 255, 0.6);
+    animation: move-footer 20s linear infinite;
+}
+
+/* Diferentes tiempos de animación para variabilidad */
+.vinyl-footer-icon:nth-child(1) {
+    animation-duration: 17s;
+}
+.vinyl-footer-icon:nth-child(2) {
+    animation-duration: 19s;
+}
+.vinyl-footer-icon:nth-child(3) {
+    animation-duration: 21s;
+}
+.vinyl-footer-icon:nth-child(4) {
+    animation-duration: 23s;
+}
+
+@keyframes move-footer {
+    0% { left: -100px; top: 0; transform: translateX(0); }
+    25% { left: 20%; top: 20px; transform: translateX(20vw); }
+    50% { left: 50%; top: 50px; transform: translateX(50vw); }
+    75% { left: 75%; top: 20px; transform: translateX(75vw); }
+    100% { left: 100%; top: 0; transform: translateX(100vw); }
+}
+
+footer nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+}
+
+footer nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+
+  
+
+
+

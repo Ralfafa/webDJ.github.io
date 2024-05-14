@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>RAFAELDJPAGINA</title>
+</head>
+<body>
+    <header>
+        <i class="fas fa-compact-disc vinyl-icon"></i>
+    <i class="fas fa-compact-disc vinyl-icon"></i>
+    <i class="fas fa-compact-disc vinyl-icon"></i>
+    <i class="fas fa-compact-disc vinyl-icon"></i>
+    <div class="title-image-container">
+        <img src="foto DJ/cabeza giratoria.png" alt="RAFA EL DJ" id="rotating-title">
+    </div>
+        <!-- Barra de Búsqueda con Ícono de Lupa Solamente -->
+<div class="search-bar">
+    <i class="fas fa-search" id="searchIcon"></i>
+    <input type="text" id="searchInput" placeholder="Buscar..." style="display: none;">
+</div>
+        <!-- Menú de Opciones -->
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="#info"><i class="fa-solid fa-circle-info"></i>Info</a></li>
+                <li><a href="#multimedia"><i class="fa-solid fa-link"></i>Multimedia</a></li>
+                <li><a href="#links"><i class="fa-solid fa-video"></i>Links</a></li>
+                <li><a href="#calendar"><i class="fa-solid fa-calendar-days"></i>Calendario de Artista</a></li>
+                <li><a href="#contacto"><i class="fa-regular fa-address-book"></i>Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+            <section id="info">
+                <div class="section-background">
+                <h2>Quien es Rafael?</h2>
+<p class="text-background">
+    Rafa se considera un fanático que ha llegado muy lejos en el mundo del DJing nacional gracias a la <strong>perseverancia y la constante búsqueda por mejorar con el tiempo</strong>. Lleva una trayectoria de 5 años de constancia mezclando música, siempre buscando definirse y pulir los estilos que más le gustan, abarcando grandes variedades musicales. Predominan los <strong>sonidos minimalistas y progresivos</strong>.
+
+    <h3>Metodo de mezcla</h3>
+    <p>Su técnica de mezcla es variada dependiendo del estilo, lo que hace que sus presentaciones sean muy distintas entre sí. Esto lo lleva a no poder ser definido con un solo estilo.</p>
+
+    <h3>Reconocimiento y logros</h3>
+    <p>Se ha ganado la confianza del público y de grandes referentes del movimiento local por su profesionalidad y sus buenos sets, que buscan armonía con el ambiente en el que se encuentra. Rafael es un DJ que siente la música desde el alma.</p>
+    <div class="additional-images">
+        <img src="flyers DJ/keyre.png" alt="Descripción de la imagen 1">
+        <img src="flyers DJ/onurrafa.png" alt="Descripción de la imagen 2">
+        <img src="flyers DJ/alci.png" alt="Descripción de la imagen 3">
+        <img src="flyers DJ/sam.png" alt="Descripción de la imagen 3">
+        <img src="flyers DJ/tree.png" alt="Descripción de la imagen 3">
+        <img src="flyers DJ/galvan.png" alt="Descripción de la imagen 3">
+    </div>
+    <h3>Presentaciones y colaboraciones</h3>
+    <p>Ha logrado presentarse en algunos de los mejores clubes y ciclos musicales del país, como Tango, Leitmotiv, Inbetween, Condesa, Café Salazar, Clubroom, Sonico, Sublime, Key records, entre muchos más. También ha compartido cabina e incluso entregado cabina a grandes exponentes internacionales, como Dj Koolt, Onur Ozer, Alci, S.A.M, CAP, Mateo Dufour, Franco Cinelli, Toman, E110101, entre otros.</p>
+
+    <h3>Contribuciones a la escena musical</h3>
+    <p>Rafa siempre ha tenido la intención de fomentar la cultura underground en Paraguay. En 2018, creó su propio ciclo semanal llamado Hipnosis, que en su momento fue uno de los únicos que se hacía de forma semanal en búsqueda de dar espacio al talento local. En 2020, junto a su socio y gran precursor de la escena, Fabian Diaz, inauguró Leitmotiv, un ciclo de fiestas que hasta hoy en día sigue aportando su granito de arena en la cultura.</p>
+</p>
+</div>
+                    <div class="image-slider">
+                        <img class="media" src="Foto DJ/plur.jpg" alt="Rafa tocando en Club Condesa">
+                        <img class="media" src="Foto DJ/onur.JPG" alt="Rafa con Onur Ozer">
+                        <img class="media" src="Foto DJ/sonrie.jpg" alt="Rafa en Tango">
+                        <img class="media" src="Foto DJ/publicplur.jpg" alt="Rafa tocando en Leitmotiv">
+                        <img class="media" src="Foto DJ/subli.jpg" alt="Rafa en Clubroom">
+                    </div>
+                </section>
+                <section id="multimedia">
+                    <h2>Multimedia</h2>
+                    <div class="video-selector">
+                        <button onclick="showVideo(1)">Año nueva Condesa 2023</button>
+                        <button onclick="showVideo(2)">After Pulse Ciudad del Este</button>
+                        <button onclick="showVideo(3)">Aniversario Sublime</button>
+                        <button onclick="showVideo(4)">Warm up Pulse</button>
+                    </div>
+                    <div class="video-container">
+                        <video id="video1" controls width="300">
+                            <source src="videos DJ/findeañocondesa.mp4" type="video/mp4">
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                        <p id="videoDesc1">La mision era tocar a las 13hs en modo "after", Rafa llego con sus melodias para iluminar la pista.</p>
+                
+                        <video id="video2" controls width="300">
+                            <source src="videos DJ/afterpulse.mp4" type="video/mp4">
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                        <p id="videoDesc2">Rafa nuevamente en una de sus facetas favoritas, el after.</p>
+                
+                        <video id="video3" controls width="300">
+                            <source src="videos DJ/sublaim.mp4" type="video/mp4">
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                        <p id="videoDesc3">La mision de Rafa para el aniversario de esta prestigiosa fiesta de Sudamerica fue calentar la pista para lo que se venia.</p>
+                
+                        <video id="video4" controls width="300">
+                            <source src="videos DJ/cap.mp4" type="video/mp4">
+                            Tu navegador no soporta videos HTML5.
+                        </video>
+                        <p id="videoDesc4">Mostrando su versatilidad, Rafa calentaba la pista de Pulse al ritmo del microhouse.</p>
+                    </div>
+                </section>
+                
+                <section id="links">
+                    <h2>Donde Escuchar a Rafael</h2>
+                    <div class="youtube-link">
+                        <a href="https://www.youtube.com/watch?v=XBCiUIAywZs&t=2518s&ab_channel=Caf%C3%A9Salazar" target="_blank">
+                            <img src="https://img.youtube.com/vi/XBCiUIAywZs/0.jpg" alt="Descripción del video">
+                            <p>Rafa set para Radio Sala</p>
+                        </a>
+                    </div>
+                    <!-- Contenedor para Linktree -->
+                    <div class="linktree-container">
+                        <h3>Todos los Rafael Sets</h3>
+                        <a href="https://linktr.ee/rafaeldiyei" target="_blank" class="linktree-button">Visitar mi Linktree</a>
+                    </div>
+                </section>
+                <section id="calendar">
+                    <h2>Calendario de Artista</h2>
+                    <div class="calendar-container">
+                        <!-- Aquí se podría incluir un calendario embebido, como Google Calendar -->
+                        <iframe src="https://calendar.google.com/calendar/embed?src=tu_correo%40gmail.com&ctz=America%2FNew_York" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                    <h3>Solicitar una fecha</h3>
+                    <form action="submit_request.php" method="post" class="request-form">
+                        <input type="text" name="name" placeholder="Tu nombre" required>
+                        <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                        <input type="date" name="requested_date" required>
+                        <textarea name="message" placeholder="Mensaje adicional"></textarea>
+                        <button type="submit">Enviar Solicitud</button>
+                    </form>
+                </section>
+                
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Sígueme en Instagram para estar al día con mis últimos eventos y publicaciones:</p>
+        <a href="https://www.instagram.com/_______rafael__________/" target="_blank" class="instagram-link">
+            <i class="fa-brands fa-instagram"></i> Instagram
+        </a>        
+        <p>¿Quieres ponerse en contacto directo? Envíame un email:</p>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rafamocas1@gmail.com&su=Asunto&body=Mensaje" target="_blank" class="email-link"><i class="fa-solid fa-envelopes-bulk"></i>Enviar G-mail</a>
+    </section>
+        </main>       
+    <footer>
+        <i class="fas fa-compact-disc vinyl-footer-icon"></i>
+    <i class="fas fa-compact-disc vinyl-footer-icon"></i>
+    <i class="fas fa-compact-disc vinyl-footer-icon"></i>
+    <i class="fas fa-compact-disc vinyl-footer-icon"></i>
+        <p>By Mimosos corp.</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
